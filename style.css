@@ -1,0 +1,57 @@
+/* Normalise the window */
+body {
+    margin: 0;
+}
+
+/* Colors of boxes*/
+.col-1 {
+    background: red;
+}
+
+.col-2 {
+    background: green;
+}
+
+.col-3 {
+    background: blue;
+}
+
+.col-4 {
+    background: black;
+}
+
+/* Flexible grid main row */
+.row {
+    display: block;
+    overflow: hidden;
+}
+
+/* Set this for in case of float overlapping */
+.row:after {
+    clear: both;
+}
+
+/* Column default style */
+.col {
+    width: 25%;
+    height: 150px;
+    text-align: center;
+    font-size: 32px;
+    color: #ffffff;
+    line-height: 150px;
+    float: left;
+}
+
+/* Window size starts at 720px */
+@media only screen and (max-width: 720px) {
+    .col {
+        width: 50%;
+    }
+}
+
+/* Window size starts at 360px */
+@media only screen and (max-width: 360px) {
+    .col {
+        width: 100%;
+    }
+}
